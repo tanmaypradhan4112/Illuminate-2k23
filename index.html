@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Illuminate-2k23</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/cmr_logo.png" rel="icon">
+  <link href="assets/img/cmr_logo.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-76JF2YKRSR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-76JF2YKRSR');
+</script>
+
+<body>
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <a href="index.html" class="hero-logo" data-aos="zoom-in"><img src="assets/img/illuminate.png" style="width:40%"
+          alt=""></a>
+
+      <!-- Countdown Timer -->
+      <div class="countdown">
+        <p>Fun Begins In!</p>
+        <div class="launch-time">
+          <div class="time">
+            <h2 id="days">00</h2>
+            <span>DAYS</span>
+          </div>
+
+          <div class="time">
+            <h2 id="hours">00</h2>
+            <span>HOURS</span>
+          </div>
+
+          <div class="time">
+            <h2 id="minutes">00</h2>
+            <span>MINUTES</span>
+          </div>
+
+          <div class="time">
+            <h2 id="seconds">00</h2>
+            <span>SECONDS</span>
+          </div>
+        </div>
+
+        <script>
+          const days = document.getElementById('days');
+          const hours = document.getElementById('hours');
+          const minutes = document.getElementById('minutes');
+          const seconds = document.getElementById('seconds');
+
+          const currenyYear = new Date().getFullYear();
+
+          const newYearTime = new Date('April 3 2023 00:00:00');
+
+          function updateCountdown() {
+            const currentTime = new Date();
+            const diff = newYearTime - currentTime;
+
+            var d = Math.floor(diff / 1000 / 60 / 60 / 24);
+            var h = Math.floor(diff / 1000 / 60 / 60) % 24;
+            var m = Math.floor(diff / 1000 / 60) % 60;
+            var s = Math.floor(diff / 1000) % 60;
+
+            days.innerHTML = d;
+            hours.innerHTML = m < 10 ? '0' + h : h;
+            minutes.innerHTML = m < 10 ? '0' + m : m;
+            seconds.innerHTML = m < 10 ? '0' + s : s;
+
+          }
+          setInterval(updateCountdown, 1000);
+        </script>
+
+
+      </div>
+      <!-- End of timer feature -->
+
+      <!-- Navigate button -->
+      <button class='glowing-btn' data-aos="fade-up" data-aos-delay="200">
+        <a href="https://youtu.be/rnAOLeZMY_g" target="_blank">
+          <span class='glowing-txt'>WATCH TEASER</span>
+      </button>
+      </a>
+      <a href="#about" style="color:#ff10f0; font-weight:600; font-size:20px;">Tap to Register</a>
+    </div>
+  </section>
+  <!-- End Hero -->
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <a href="index.html"><img src="assets/img/cmr_logo.png" alt="" class="img-fluid"></a>
+      </div>
+
+      <!-- Navigation Bar -->
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="https://twitter.com/illuminate_2k23" target="_blank"><i
+                class="fab fa-twitter"></i></a></li>
+          <li><a class="nav-link scrollto" href="https://instagram.com/illuminate_cmrit?igshid=YmMyMTA2M2Y="
+              target="_blank"><i class="fab fa-instagram"></i></a></li>
+          <li><a class="nav-link scrollto"
+              href="https://www.linkedin.com/posts/cmritilluminate_illuminate-illuminatecmrit-illuminate2k23-activity-7042372112472305664-QldP?utm_source=share&utm_medium=member_desktop"
+              target="_blank"><i class="fab fa-linkedin"></i></a></li>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">Events</a></li>
+          <li><a class="nav-link scrollto" href="#services">Coordinators</a></li>
+          <li><a class="nav-link scrollto " href="#sponsor">Sponsors</a></li>
+          <li><a class="nav-link scrollto " href="#portfolio">About us</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+      <!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+    <img src="assets/img/About.png" class="img-fluid" alt="">
+    <img src="assets/img/Features.png" class="img-fluid" alt="">
+
+
+    <!-- ======= Events Section ======= -->
+    <section id="about" class="portfolio">
+      <div class="container">
+        <div class="section-title event-title1" data-aos="fade-up">
+          <!-- <h2>Illuminate-2k23 Events</h2> -->
+          <h1 class="text-shadow" style="font-size: 4vw;">Illuminate-2k23 Events</h1>
+        </div>
+
+        <!-- 
+          app = Tech
+          card = Non-tech
+          web = MBA 
+        -->
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">Tech</li>
+              <li data-filter=".filter-card">Non-Tech</li>
+              <li data-filter=".filter-web">MBA</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <!-- Code Clash Tech Event 1 -->
+          <div class="col-lg-3 col-md-5 col-sm-4 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/events/2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Code Clash</h4>
+                <h4>(Coding)</h4>
+                <div class="portfolio-links">
+                  <a href="codeclash.html" title="More Details">Tap to know more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- MBA Event 1 -->
+          <div class="col-lg-3 col-md-5 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCA8ADLvFKQSG-ErOMq4QnS-jkM1bZjjICuA&usqp=CAU"
+                class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Paper Presentation </h4>
+                <div class="portfolio-links">
+                  <a href="mbapp.html" title="More Details">Tap to know more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Photography Non Tech events -->
+          <div class="col-lg-3 col-md-5 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img
+                src="https://static.vecteezy.com/system/resources/previews/004/432/888/original/photo-camera-abstract-colorful-drawing-digital-graphics-illustration-of-paints-vector.jpg"
+                class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Photography</h4>
+                <div class="portfolio-links">
+                  <a href="photography.html" title="More Details">Tap to know more</i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tech Quiz Tech Event -->
+          <div class="col-lg-3 col-md-5 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/events/1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Tech Quiz</h4>
+                <div class="portfolio-links">
+                  <a href="techquiz.html" title="More Details">Tap to know more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dark Patterns Tech Events -->
+          <div class="col-lg-3 col-md-5 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/events/10.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Dark Patterns</h4>
+                <div class="portfolio-links">
+                  <a href="darkpatterns.html" title="More Details">Tap to know more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Rangoli Non Tech event -->
+          <div class="col-lg-3 col-md-5 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="https://www.batori24.com/wp-content/uploads/2022/10/diwali-rangoli.jpeg" class="img-fluid"
+                alt="">
+              <div class="portfolio-info">
+                <h4>Rangoli</h4>
+                <div class="portfolio-links">
+                  <a href="rangoli.html" title="More Details">Tap to know more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Paper Presentation Tech Event -->
+          <div class="col-lg-3 col-md-5 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/events/4.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Project Expo</h4>
+                <div class="portfolio-links">
+                  <a href="techpp.html" title="More Details">Tap to know more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Treasure hunt Non Tech events -->
+          <div class="col-lg-3 col-md-5 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="https://onionunlimited.com/wp-content/uploads/2022/08/treasure-hunt.jpeg" class="img-fluid"
+                alt="">
+              <div class="portfolio-info">
+                <h4>Treasure Hunt</h4>
+                <div class="portfolio-links">
+                  <a href="treasurehunt.html" title="More Details">Tap to know more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ad-Maker MBA event -->
+          <div class="col-lg-3 col-md-5 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img
+                src="https://imgv3.fotor.com/images/videoImage/five-ads-for-instangram-in-the-color-of-red-yellow-pink-red-and-white-with-the-earphone-and-bags-on-it.png"
+                class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Ad-Maker</h4>
+                <div class="portfolio-links">
+                  <a href="admaker.html" title="More Details">Tap to know more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Esports Non Tech events -->
+          <div class="col-lg-3 col-md-5 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="https://univdatos.com/wp-content/uploads/2022/02/Esports.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Esports</h4>
+                <div class="portfolio-links">
+                  <a href="esports.html" title="More Details">Tap to know more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Debug the Bug Tech Event -->
+          <div class="col-lg-3 col-md-5 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/events/3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Debug the Bug</h4>
+                <div class="portfolio-links">
+                  <a href="debugthebug.html" title="More Details">Tap to know more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Short Film Non Tech Events -->
+          <div class="col-lg-3 col-md-5 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="http://www.digiplexmovies.com/wp-content/uploads/2018/07/1-41.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Short-Film</h4>
+                <div class="portfolio-links">
+                  <a href="shortfilm.html" title="More Details">Tap to know more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tech Talk Tech Event -->
+          <div class="col-lg-3 col-md-5 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/events/5.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Tech Talk</h4>
+                <h4>(Paper Presentation)</h4>
+                <div class="portfolio-links">
+                  <a href="techtalk.html" title="More Details">Tap to know more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mehndi Non Tech events -->
+          <div class="col-lg-3 col-md-5 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img
+                src="https://media.istockphoto.com/id/1332414791/photo/mehndi-painted-on-hindu-brides-hand.jpg?s=612x612&w=0&k=20&c=0TOkslae7baVsp-Z6aE_ZeYYExBwpQcydd117T_yWHs="
+                class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Mehndi</h4>
+                <div class="portfolio-links">
+                  <a href="mehndi.html" title="More Details">Tap to know more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Connect The Patches Tech Event -->
+          <div class="col-lg-3 col-md-5 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/events/6.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Connect the Patches</h4>
+                <div class="portfolio-links">
+                  <a href="connectthepatches.html" title="More Details">Tap to know more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Business Quiz MBA -->
+          <div class="col-lg-3 col-md-5 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="https://media.proprofs.com/images/QM/user_images/1826446/1604295166.jpg" class="img-fluid"
+                alt="">
+              <div class="portfolio-info">
+                <h4>Business Quiz</h4>
+                <div class="portfolio-links">
+                  <a href="bizquiz.html" title="More Details">Tap to know more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Attract By UI Tech Event -->
+          <div class="col-lg-3 col-md-5 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/events/7.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Attract By UI</h4>
+                <div class="portfolio-links">
+                  <a href="attractbyui.html" title="More Details">Tap to know more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Start-Up Ideas Quiz MBA -->
+          <div class="col-lg-3 col-md-5 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img
+                src="https://images.moneycontrol.com/static-mcnews/2017/03/shutterstock_556373581-770x433.jpg?impolicy=website&width=770&height=431"
+                class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Start-Up Ideas</h4>
+                <div class="portfolio-links">
+                  <a href="startupideas.html" title="More Details">Tap to know more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Events Section -->
+
+    <!-- Text Animation -->
+    <div class="text-animation">
+      <p style="font-size: 5vw;">CONNECT CREATE CELEBRATE</p>
+    </div>
+    <!-- Text Animation -->
+
+    <!-- ======= Coordinator Section ======= -->
+    <section id="services" class="featured">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-left">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">
+                  <h4>Chief Patrons</h4>
+                  <p>Sri Ch. Malla Reddy | Smt. Ch. Kalpana Reddy</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-1">
+                  <h4>Patrons</h4>
+                  <p>Sri Ch. Narasimha Reddy | Dr. Ch. Gopal Reddy | Smt. Ch. Kalpana Reddy | Sri Ch. Abhinav Reddy |
+                    Dr. M. Janga Reddy | Dr. B. Sathyanarayana</p>
+                </a>
+              </li>
+              <li class="nav-item mt-2">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">
+                  <h4>Convenor</h4>
+                  <p>Dr. A. Nirmal Kumar</p>
+                </a>
+              </li>
+              <li class="nav-item mt-2">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-3">
+                  <h4>Student Coordinator</h4>
+                  <p>Shruthi | Fahad | Stephen Joel | Durga Prasad | Ganesh</p>
+                </a>
+              </li>
+              <li class="nav-item mt-2">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-4">
+                  <h4>Web Developers</h4>
+                  <p>Tanmay Pradhan | Joyjit Paul</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Coordinator Section -->
+
+    <!-- Sponsors sections -->
+    <section id="sponsor" class="sponsor">
+      <div class="container">
+        <div class="sponsor-title" data-aos="fade-up">
+          <h2>Sponsors for the  Event</h2>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+            <div class="sponsor-image column">
+              <img src="https://www.pngkey.com/png/full/306-3068282_ktm-sportmotorcycles-picsart-png-ktm-logo.png" class="img-fluid" alt="">
+            </div>
+
+            <div class="sponsor-image column">
+              <img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/pxchlahl8klh6gnexdqx" class="float-left img-fluid" alt="">
+            </div>
+
+            <div class="sponsor-image column">
+              <img src="https://static.wixstatic.com/media/ce7c7e_cb21ec67b71d41c5bbd06af541fe7e44~mv2.png/v1/fill/w_224,h_159,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/TriBolt-Final-Logo.png" class="float-right img-fluid" alt="">
+            </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- ======= About Us Section ======= -->
+    <section id="portfolio" class="about">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>About Us</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="image">
+              <img src="assets/img/illuminate.png" class="img-fluid" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="content pt-4 pt-lg-0 pl-0 pl-lg-3 ">
+              <h3>Welcome to Illuminate 2k23!</h3>
+              <p class="fst-italic">
+                Illuminate is a technical fest that brings together the best minds to connect, create and celebrate
+                creativity, knowledge and fun.
+              </p>
+              <ul>
+                <li><i class="bx bx-check-double"></i> This fest will feature a wide range of exciting activities.</li>
+                <li><i class="bx bx-check-double"></i> It provides a unique opportunity for the students to learn from
+                  each other, exchange ideas and collaborate. </li>
+                <li><i class="bx bx-check-double"></i> There's something for everyone from tech talks to dance.</li>
+              </ul>
+              <p>
+                We have put together an amazing lineup of events and activities that will help you get a glimpse into
+                the future of tech. From hackathons, tech talks to dance, music and more <b>Illuminate 2k23!</b> So join
+                us to explore and unleash your creative powers. Don't miss your chance to <b>CONNECT, CREATE,
+                  CELEBRATE</b> with <b>ILLUMINATE-2K23.</b>
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="social-links">
+          <a href="https://twitter.com/illuminate_2k23" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="https://instagram.com/illuminate_cmrit?igshid=YmMyMTA2M2Y=" class="instagram"><i
+              class="bx bxl-instagram"></i></a>
+          <a href="https://www.linkedin.com/posts/cmritilluminate_illuminate-illuminatecmrit-illuminate2k23-activity-7042372112472305664-QldP?utm_source=share&utm_medium=member_desktop"
+            class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <p> <b>CMR Institute Of Technology |Illuminate-2k23</b> </p>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
